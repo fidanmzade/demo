@@ -1,13 +1,130 @@
-body {
+body{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  background: rgb(214, 139, 214);
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.header__title {
+  font-family: 'Luckiest Guy', cursive;
+  color:rgb(255, 255, 255);
+  font-size: 40px;
+  margin-left: -100px;
+}
+
+
+a{
+  font-size: x-large;
+  margin-left: 10px;
+}
+input{
+  box-sizing: border-box;
+  display: block;
+  margin-top: 5px;
+  width: 300px;
+  font-size: 14px;
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 8, 7, .5);
+}
+
+button {
+  margin-top: 17px;
+  padding: 5px 10px;
+  border: none;
+  transition: all 0.2s linear;
+  color: #ffffff;
+  background-color: rgb(214, 139, 214);
+}
+
+button:hover:not(:disabled) {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  background-color: #ffffff;
+  color:rgb(214, 139, 214);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+select{
+  font-size: large;
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+
+p{
+  padding: 0;
+  margin: 0;
+  font-size: xx-large;
+}
+
+.main{
+
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+
+.search{
+  display: flex;
+  gap: 20px;
+  width: fit-content;
+  
+}
+.search-box-button{
+  font-size: x-large;
+  
+}
+h5{
+  margin-bottom:1px ;
+}
+.mylist{
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  padding-right: 5px;
+  color:rgb(185, 111, 185);
+
+}
+.list{
+  border:  2px solid black
+}
+
+.app-name{
+  text-align: center;
+}
+
+.list-div{
+  display: flex;
+  flex-direction: column;
+}
+
+.list-div button{
+  width: fit-content;
+  margin-top: 20px;
+  padding: 5px;
+  font-size: large;
+}
+.list-div a{
+  width: fit-content;
+  margin-top: 20px;
 }
